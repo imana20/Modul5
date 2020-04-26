@@ -14,6 +14,16 @@ class userService(object):
                 "role"      : "user"
             }
         }
+        self.history = {
+            "imanakelompok10@gmail.com" : {
+                "pinjam_buku" : {"- Kalkulus" , "- Sistem Digital"},
+                "tgl_pinjam" : "26-04-2020"
+                },
+            "erlinkelompok10@gmail.com" : {
+                "pinjam_buku" : {"- Pendidikan Pancasila","- Kecakapan Antar Personal"},
+                "tgl_pinjam" : "26-04-2020"
+                },
+            }
 
     def login(self):
         get_data = self.checkCredentials()
